@@ -175,3 +175,32 @@
 @media(max-width:900px){.faq-layout{grid-template-columns:.8fr 1.2fr;gap:38px}.faq-list{grid-template-columns:1fr}}
 @media(max-width:760px){.faq-layout{grid-template-columns:1fr;gap:28px}.faq-intro{position:static}.faq-list{grid-template-columns:1fr;gap:11px}.faq-item summary{min-height:74px}.faq-section{padding:72px 0 78px}}
 @media(prefers-reduced-motion:reduce){.faq-item,.faq-item summary span{transition:none}.faq-item[open] p{animation:none}}
+
+
+/* Six-client testimonial carousel */
+.testimonial-slider{max-width:900px;margin:0 auto}
+.testimonial-slide{min-height:300px;padding:34px 40px;border:1px solid #ffffff26;background:linear-gradient(125deg,#17263b 0%,#101a2a 100%);box-shadow:0 24px 60px #0002;display:flex;flex-direction:column;justify-content:space-between}
+.testimonial-slide-top,.testimonial-slide-footer{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.testimonial-slide-top .testimonial-kicker{color:#91b7ff;font-size:9px;font-weight:800;letter-spacing:.17em}
+.testimonial-quote-icon{color:#6e9ff4;opacity:.9}
+.testimonial-placeholder{padding:24px 0 30px}
+.testimonial-placeholder-line{display:block;width:42px;height:3px;margin-bottom:18px;background:#6e9ff4}
+.testimonial-placeholder h3{margin:0;color:#f6f8fc;font-family:'Manrope',sans-serif;font-size:clamp(23px,3vw,34px);letter-spacing:-.05em}
+.testimonial-placeholder p{max-width:620px;margin:13px 0 0;color:#aeb9ca;font-size:13px;line-height:1.9}
+.testimonial-client{display:flex;align-items:center;gap:12px}
+.testimonial-avatar{display:grid;place-items:center;width:42px;height:42px;border:1px solid #91b7ff65;background:#ffffff0d;color:#b8d0ff;font-size:11px;font-weight:800}
+.testimonial-client strong,.testimonial-client small{display:block}
+.testimonial-client strong{color:#f4f6fa;font-size:11px}
+.testimonial-client small{margin-top:4px;color:#8797ad;font-size:9px}
+.testimonial-index{color:#a8b8cf;font-size:12px;font-weight:800;letter-spacing:.12em}
+.testimonial-index i{padding:0 5px;color:#60728b;font-style:normal}
+.testimonial-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:22px}
+.testimonial-dots{display:flex;align-items:center;gap:9px}
+.testimonial-dot{width:8px;height:8px;padding:0;border:0;border-radius:20px;background:#52637a;cursor:pointer;transition:width .2s,background .2s}
+.testimonial-dot.is-active{width:28px;background:#91b7ff}
+.testimonial-arrows{display:flex;gap:9px}
+.testimonial-arrows button{display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffff40;background:transparent;color:#f6f8fc;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.testimonial-arrows button:hover{border-color:#91b7ff;background:#326fe633;transform:translateY(-2px)}
+.testimonial-honesty-note{margin:18px 0 0;color:#8292a8;font-size:10px;line-height:1.7}
+@media(max-width:640px){.testimonial-slide{min-height:315px;padding:25px 21px}.testimonial-placeholder{padding:28px 0}.testimonial-placeholder p{font-size:12px}.testimonial-slide-footer{align-items:flex-end}.testimonial-controls{margin-top:17px}.testimonial-arrows button{width:39px;height:39px}}
+@media(prefers-reduced-motion:reduce){.testimonial-dot,.testimonial-arrows button{transition:none}}
