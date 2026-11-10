@@ -613,3 +613,128 @@ h1,h2,h3,h4,.brand-mark,.hero-copy h1,.section-top h2,.about-label h2,.contact-c
  .runway-outro span,.runway-outro a{font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){.runway-media>img,.runway-open{transition:none}}
+
+
+/* Mobile-first refinement: accessible navigation, balanced spacing and touch targets */
+.mobile-menu{display:none}
+@media(min-width:641px) and (max-width:900px){
+ .main-nav{gap:16px;font-size:11px}
+ .header-booking{padding:10px 12px}
+ .container{width:calc(100% - 40px)}
+ .runway-gallery{gap:28px 16px}
+ .runway-piece-caption{gap:12px}
+}
+@media(max-width:640px){
+ html{scroll-padding-top:76px}
+ body{overflow-x:hidden;-webkit-text-size-adjust:100%}
+ .container{width:calc(100% - 36px)}
+ .site-header{position:sticky;top:0}
+ .header-inner{height:66px;gap:12px}
+ .brand-mark{font-size:25px}
+ .main-nav{display:none}
+ .header-booking{display:none}
+ .mobile-menu{display:block;position:relative;margin-left:auto}
+ .mobile-menu summary{display:flex;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;list-style:none;border:1px solid #e8dce9;border-radius:5px;background:#fff;cursor:pointer}
+ .mobile-menu summary::-webkit-details-marker{display:none}
+ .mobile-menu summary span{display:block;width:18px;height:2px;border-radius:2px;background:#171034;transition:transform .2s,opacity .2s}
+ .mobile-menu[open] summary span:first-child{transform:translateY(7px) rotate(45deg)}
+ .mobile-menu[open] summary span:nth-child(2){opacity:0}
+ .mobile-menu[open] summary span:last-child{transform:translateY(-7px) rotate(-45deg)}
+ .mobile-menu nav{position:absolute;top:54px;right:0;z-index:50;display:grid;min-width:min(280px,calc(100vw - 36px));gap:0;padding:8px;border:1px solid #eee5f0;border-radius:7px;background:#fff;box-shadow:0 18px 45px #17103424}
+ .mobile-menu nav a{display:flex;align-items:center;min-height:46px;padding:0 13px;border-bottom:1px solid #f1edf2;color:#241a3a;font-size:13px;font-weight:700}
+ .mobile-menu nav a:last-child{margin-top:5px;border:0;background:#fbedfa;color:#bf19b8}
+ .hero-fullbleed{min-height:calc(100svh - 66px);min-height:calc(100dvh - 66px)}
+ .hero-overlay-grid{padding-top:72px;padding-bottom:46px}
+ .hero-fullbleed .hero-copy h1{font-size:clamp(43px,11.5vw,64px);line-height:.99;overflow-wrap:normal}
+ .hero-fullbleed .hero-lead{max-width:38rem;font-size:14px;line-height:1.75}
+ .hero-fullbleed .hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+ .hero-fullbleed .hero-actions .button{width:100%;min-height:48px}
+ .hero-proof{align-items:flex-start}
+ .hero-proof strong{font-size:10px;line-height:1.5}
+ .hero-visual-wrap{width:min(84%,360px);margin:0 auto}
+ .hero-visual{height:clamp(245px,72vw,340px)}
+ .hero-floating-note{right:-10px;bottom:-20px;min-width:0;width:min(245px,85%)}
+ .hero-footer{gap:10px 16px;padding-top:15px;font-size:7px;letter-spacing:.1em}
+ .section-top h2,.builder-intro-section .section-top h2,.channel-layout h2{font-size:clamp(33px,9vw,46px);line-height:1.06}
+ .section-top>p,.channel-layout p{font-size:13px;line-height:1.8}
+ .builder-intro-section,.styles-section,.why-section,.channel-section,.ways-section{padding-top:64px;padding-bottom:64px}
+ .builder-feature-grid,.ways-grid,.why-grid{grid-template-columns:1fr}
+ .builder-feature-card{min-height:350px;padding:21px}
+ .channel-layout{gap:24px}
+ .channel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .channel-grid article{min-width:0;min-height:112px;padding:13px}
+ .channel-grid strong{font-size:12px}
+ .channel-grid small{font-size:9px;line-height:1.5}
+ .creative-styles{grid-template-columns:1fr;gap:14px}
+ .creative-style-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .creative-style-list button{min-width:0}
+ .creative-style-preview{min-height:310px}
+ .runway-section{padding:68px 0 58px}
+ .runway-topline{align-items:flex-start;flex-wrap:wrap;gap:8px 16px;font-size:7px;line-height:1.5}
+ .runway-heading{padding:44px 0 34px;gap:28px}
+ .runway-heading-index strong{font-size:clamp(88px,23vw,138px)}
+ .runway-heading-copy h2{font-size:clamp(46px,12vw,62px)}
+ .runway-heading-copy p{font-size:12px;line-height:1.8}
+ .runway-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 12px}
+ .runway-piece-1{grid-column:1/-1}
+ .runway-piece-1 .runway-media{aspect-ratio:16/10}
+ .runway-piece-2,.runway-piece-3,.runway-piece-4,.runway-piece-5,.runway-piece-6,.runway-piece-7,.runway-piece-8,.runway-piece-9{grid-column:span 1;margin:0}
+ .runway-piece-3,.runway-piece-5,.runway-piece-9{margin-top:0}
+ .runway-media{aspect-ratio:3/4}
+ .runway-piece-caption{display:block;padding-top:10px}
+ .runway-piece-caption h3{font-size:clamp(12px,3.5vw,15px);line-height:1.35}
+ .runway-piece-caption p{margin-top:6px;font-size:10px;line-height:1.65}
+ .runway-piece-featured .runway-piece-caption{display:block}
+ .runway-piece-featured .runway-piece-caption h3{font-size:19px}
+ .runway-piece-featured .runway-piece-caption p{max-width:none;font-size:11px}
+ .runway-piece-type{max-width:72%;font-size:6px;letter-spacing:.08em}
+ .runway-outro{align-items:flex-start;flex-direction:column;gap:13px;margin-top:42px}
+ .testimonials-section{padding:66px 0}
+ .testimonials-heading{margin-bottom:30px}
+ .testimonial-stage{grid-template-columns:1fr;gap:8px}
+ .testimonial-side-note{padding:0;flex-direction:row;align-items:center;gap:12px}
+ .testimonial-side-note i{width:20px;margin:0}
+ .testimonial-side-note strong{font-size:19px}
+ .testimonial-feature{min-height:0;padding:25px 20px}
+ .testimonial-feature-copy{padding:32px 0}
+ .testimonial-feature-copy h3{font-size:clamp(25px,7vw,34px)}
+ .testimonial-feature-top,.testimonial-feature-bottom{gap:10px}
+ .service-grid{grid-template-columns:1fr}
+ .service-card{min-height:0;padding:22px}
+ .service-card h3{margin-top:18px}
+ .process-grid{grid-template-columns:1fr}
+ .process-card{padding:22px}
+ .about-section{grid-template-columns:1fr;gap:20px}
+ .about-label{min-height:175px}
+ .about-content .about-intro{font-size:16px}
+ .capabilities{gap:10px}
+ .faq-layout{grid-template-columns:1fr;gap:24px}
+ .faq-intro h2{font-size:clamp(38px,10vw,50px)}
+ .faq-item summary{gap:12px;padding:15px 13px;font-size:12px;line-height:1.5}
+ .faq-item p{font-size:12px;line-height:1.8}
+ .contact-section{padding-top:0;padding-bottom:54px}
+ .contact-card{padding:45px 19px}
+ .contact-content h2{font-size:clamp(36px,10vw,48px);line-height:1.04}
+ .contact-content>p{font-size:12px;line-height:1.8}
+ .contact-actions{display:grid;grid-template-columns:1fr;gap:9px}
+ .contact-actions .button{width:100%;min-height:48px}
+ .contact-details{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;font-size:9px;overflow-wrap:anywhere}
+ .footer-inner{align-items:flex-start;gap:12px;flex-direction:column}
+ .footer-inner>span{order:0;width:auto}
+ .footer-inner>a:last-child{padding:8px 0}
+ a,button,summary{-webkit-tap-highlight-color:transparent}
+}
+@media(max-width:380px){
+ .container{width:calc(100% - 28px)}
+ .hero-fullbleed .hero-copy h1{font-size:clamp(40px,11vw,48px)}
+ .hero-overlay-grid{width:calc(100% - 28px)}
+ .hero-fullbleed .availability{font-size:8px;gap:6px}
+ .hero-visual-wrap{width:88%}
+ .runway-gallery{gap:23px 9px}
+ .runway-piece-caption h3{font-size:12px}
+ .creative-style-list strong{font-size:9px}
+ .contact-details{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){
+ .mobile-menu summary span{transition:none}
+}
