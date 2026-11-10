@@ -122,3 +122,33 @@
     inset:5px;width:calc(100% - 10px);height:calc(100% - 10px)
   }
 }
+
+
+/* Testimonials and FAQ */
+.testimonials-section{position:relative;overflow:hidden;padding:100px 0 96px;background:#0d1726;color:#f7f8fb}
+.testimonials-heading{align-items:end;margin-bottom:38px}
+.testimonials-section .eyebrow,.faq-section .eyebrow{color:#91b7ff}
+.testimonials-section .section-top h2,.faq-intro h2{color:#f8f9fc;font-size:clamp(42px,5vw,62px);line-height:1}
+.testimonials-section .section-top h2 em,.faq-intro h2 em{color:#91b7ff}
+.testimonials-section .section-top>p{max-width:360px;color:#aeb9ca}
+.testimonial-empty{position:relative;display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:24px;padding:34px 38px;border:1px solid #ffffff24;background:linear-gradient(115deg,#17263b,#101a2a);min-height:210px}
+.testimonial-mark{font-family:Georgia,serif;font-size:100px;line-height:.7;color:#6e9ff4}
+.testimonial-kicker{color:#91b7ff;font-size:9px;font-weight:800;letter-spacing:.17em}
+.testimonial-empty h3{margin:12px 0 8px;color:#f6f8fc;font-size:clamp(18px,2.3vw,25px);letter-spacing:-.04em}
+.testimonial-empty p{max-width:570px;margin:0;color:#aeb9ca;font-size:12px;line-height:1.8}
+.testimonial-empty .text-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:#a9c7ff;font-size:11px;font-weight:800}
+.testimonial-index{align-self:end;color:#72839c;font-size:9px;font-weight:800;letter-spacing:.14em}
+.faq-section{padding:104px 0 110px;background:#f5f7fb;color:#17243a}
+.faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:85px;align-items:start}
+.faq-intro{position:sticky;top:110px}
+.faq-intro h2{margin-top:16px;color:#17243a}
+.faq-intro p{max-width:330px;margin:20px 0;color:#6c7b90;font-size:13px;line-height:1.85}
+.faq-intro .text-link{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:#285fc0;font-size:11px;font-weight:800}
+.faq-list{border-top:1px solid #dce3ed}
+.faq-item{border-bottom:1px solid #dce3ed}
+.faq-item summary{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:23px 0;cursor:pointer;list-style:none;color:#1b2a43;font-size:14px;font-weight:800}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary span{flex:none;color:#326fe6;font-size:23px;font-weight:400;transition:transform .2s}
+.faq-item[open] summary span{transform:rotate(45deg)}
+.faq-item p{max-width:590px;margin:-5px 32px 23px 0;color:#6e7c90;font-size:12px;line-height:1.9}
+@media(max-width:760px){.faq-layout{grid-template-columns:1fr;gap:35px}.faq-intro{position:static}.testimonial-empty{grid-template-columns:42px 1fr;padding:26px 20px;gap:14px}.testimonial-mark{font-size:72px}.testimonial-index{grid-column:2}.testimonials-section{padding:76px 0}.faq-section{padding:76px 0}.testimonials-heading{display:block}.testimonials-section .section-top>p{margin-top:16px}}
