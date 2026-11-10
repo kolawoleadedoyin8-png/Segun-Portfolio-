@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -428,3 +428,102 @@ body{font-size:16px}
  .hero-floating-note{right:-20px;min-width:210px}
 }
 @media(prefers-reduced-motion:reduce){.hero-visual img{transition:none}}
+
+
+/* HostAfrica-inspired visual system: magenta, deep purple, Montserrat + Open Sans */
+:root{color-scheme:light;--ink:#171034;--muted:#686477;--blue:#E01FDA;--line:#e9e5ee;--pale:#f8f5fa;--magenta:#E01FDA;--purple:#171034;--lavender:#f5eff8}
+html{scroll-padding-top:84px}
+body{font-family:'Open Sans',Arial,sans-serif;color:#171034;background:#fff}
+h1,h2,h3,h4,.brand-mark,.hero-copy h1,.section-top h2,.about-label h2,.contact-content h2{font-family:'Montserrat',sans-serif}
+::selection{background:#f8d8f5;color:#171034}
+.site-header{background:#ffffffed;border-bottom:1px solid #eee9f1;box-shadow:0 4px 22px #17103408}
+.brand-mark{color:#171034;letter-spacing:-1.5px}
+.brand-mark span{color:#E01FDA}
+.main-nav{font-family:'Open Sans',sans-serif;color:#625d70}
+.main-nav a{transition:color .2s ease}
+.main-nav a:hover{color:#E01FDA}
+.button{border-radius:5px;font-family:'Open Sans',sans-serif;transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+.button-primary{background:#E01FDA;color:#fff;box-shadow:0 8px 22px #E01FDA30}
+.button-primary:hover{background:#bd16b8;box-shadow:0 12px 28px #E01FDA45}
+.button-quiet{border:1px solid #e5dce9;background:#fff;color:#171034}
+.eyebrow{color:#d31bc9;letter-spacing:.14em}
+.hero-fullbleed{background:radial-gradient(ellipse at 82% 45%,#38235d 0%,#21143d 42%,#171034 78%)}
+.hero-fullbleed:before{background:radial-gradient(circle at 13% 14%,#e01fda22 0 1px,transparent 2px),radial-gradient(ellipse at 80% 15%,#e01fda25,transparent 34%),linear-gradient(115deg,#171034 0%,#21143d 55%,#30204c 100%)}
+.hero-video-shade{background:linear-gradient(90deg,#171034f5 0%,#171034df 42%,#1710348a 72%,#171034b8 100%),linear-gradient(0deg,#171034d0 0%,transparent 42%,#17103466 100%)}
+.hero-fullbleed .hero-copy h1 span{color:#f07be9}
+.hero-fullbleed .availability{border-color:#ffffff35;background:#ffffff10}
+.hero-fullbleed .button-primary{background:#E01FDA;box-shadow:0 12px 34px #E01FDA55}
+.hero-fullbleed .button-primary:hover{background:#c818c1}
+.hero-fullbleed .button-quiet{border-color:#ffffff65;background:#ffffff0d;color:#fff}
+.hero-fullbleed .proof-icon{color:#f28aeb;border-color:#ffffff30;background:#ffffff12}
+.hero-visual-wrap:before{border-color:#ee8be780}
+.hero-visual-orbit{color:#f5a3ef}
+.hero-visual-stamp{background:#E01FDA}
+.hero-note-dot{background:#f07be9;box-shadow:0 0 0 5px #f07be922}
+.hero-note-arrow{color:#f39bed}
+.hero-fullbleed .hero-footer{border-color:#ffffff32}
+.work-section,.section,.testimonials-section,.faq-section{background:#fff}
+.work-editorial .section-top h2,.section-top h2,.about-label h2,.faq-intro h2{color:#171034}
+.work-editorial .section-top h2 em,.section-top h2 em,.about-label h2 em,.faq-intro h2 em{color:#d91bd0}
+.work-editorial .project-image{border-radius:5px;background:#f3edf5}
+.editorial-project-card{border:1px solid #eee8f1;background:#fff;box-shadow:0 8px 28px #17103408;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.editorial-project-card:hover{transform:translateY(-6px);border-color:#e9b2e5;box-shadow:0 20px 45px #17103414}
+.project-image-link{background:#E01FDA;color:#fff}
+.project-number{background:#171034;color:#fff}
+.text-link{color:#cf1cc7}
+.text-link:hover{color:#9e1299}
+.testimonials-section{background:#171034;color:#fff}
+.testimonials-section .eyebrow{color:#f18be9}
+.testimonials-section .section-top h2{color:#fff}
+.testimonials-section .section-top h2 em{color:#f18be9}
+.testimonials-section .section-top>p{color:#c8bfd5}
+.testimonial-feature{background:linear-gradient(135deg,#241641 0%,#171034 65%,#321c4c 100%);border:1px solid #ffffff25}
+.testimonial-kicker{color:#f39bed}
+.testimonial-feature-copy h3{color:#fff}
+.testimonial-overline{color:#f18be9}
+.testimonial-focus{color:#f1a0ed}
+.testimonial-avatar{background:#E01FDA;color:#fff}
+.testimonial-progress-item.is-active{color:#f3a2ed}
+.testimonial-progress-item.is-active i{background:#E01FDA}
+.testimonial-arrows button:hover{border-color:#f18be9;background:#E01FDA40}
+.testimonial-side-note{color:#c6b9d1}
+.services-band{background:#f8f5fa}
+.service-card{border:1px solid #e9e1ed;border-radius:5px;background:#fff;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.service-card:hover{transform:translateY(-5px);border-color:#e9a5e4;box-shadow:0 18px 40px #17103412}
+.service-icon{background:#fbe8f9;color:#d51bca;border-radius:5px}
+.service-top>span:last-child,.process-card>span{color:#d51bc9}
+.service-line{background:#E01FDA}
+.process-card{border:1px solid #e9e3ed;border-radius:5px;background:#fff;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.process-card:hover{transform:translateY(-4px);border-color:#e9a5e4;box-shadow:0 16px 35px #17103410}
+.about-section{border-top:1px solid #eee8f1;border-bottom:1px solid #eee8f1}
+.about-mark{color:#f7e4f5}
+.capabilities span{background:#f8f2f9;border:1px solid #eee3f0;color:#4f455c;border-radius:4px}
+.capabilities svg{color:#d51bc9}
+.faq-section{background:#f8f5fa}
+.faq-item{border:1px solid #e9e1ed;border-radius:5px;background:#fff;transition:border-color .2s ease,box-shadow .2s ease}
+.faq-item[open]{border-color:#e7a4e2;box-shadow:0 10px 28px #1710340a}
+.faq-item summary{color:#171034}
+.faq-item summary span{color:#d51bc9;border:1px solid #f0d5ee;border-radius:4px}
+.faq-item[open] summary span{background:#E01FDA;color:#fff;border-color:#E01FDA}
+.faq-item p{color:#686477}
+.contact-card{background:radial-gradient(ellipse at 90% 20%,#52265f 0%,transparent 42%),linear-gradient(115deg,#171034 0%,#2b1746 65%,#401b50 100%);border-radius:5px}
+.contact-content h2 em{color:#f18be9}
+.contact-shape{border-color:#ffffff20}
+.button-white{background:#fff;color:#171034;border-radius:5px}
+.button-white:hover{background:#fbeafb}
+.button-glass{border:1px solid #ffffff55;background:#ffffff0c;color:#fff;border-radius:5px}
+.button-glass:hover{background:#E01FDA;border-color:#E01FDA}
+.site-footer{background:#171034;color:#c9c0d4;border-top:1px solid #ffffff20}
+.site-footer .brand-mark{color:#fff}
+.site-footer .brand-mark span{color:#f18be9}
+.site-footer a:hover{color:#f18be9}
+@media(max-width:760px){
+ .site-header{background:#fff}
+ .hero-fullbleed .hero-copy h1 span{color:#f18be9}
+ .services-band{background:#f8f5fa}
+ .faq-section{background:#f8f5fa}
+ .contact-card{border-radius:5px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
