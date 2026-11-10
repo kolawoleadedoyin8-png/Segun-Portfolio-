@@ -276,3 +276,68 @@
  .testimonial-honesty-note{margin:15px 0 0;font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){.testimonial-feature{animation:none}.testimonial-progress-item i,.testimonial-arrows button{transition:none}}
+
+
+/* Site-wide typography scale: improve readability on desktop and mobile */
+html{font-size:16px}
+body{font-size:16px}
+.main-nav{font-size:14px}
+.button{font-size:14px}
+.button-small{font-size:13px}
+.availability{font-size:11px}
+.hero-lead{font-size:17px;line-height:1.85}
+.hero-proof strong{font-size:13px}
+.hero-proof small{font-size:11px}
+.hero-footer{font-size:10px}
+.section-top>p{font-size:15px;line-height:1.85}
+.eyebrow{font-size:11px}
+.project-info h3,.work-editorial .project-info h3{font-size:20px}
+.project-info p,.work-editorial .project-info p{font-size:13px;line-height:1.85}
+.project-type,.editorial-project-meta{font-size:9px}
+.service-card h3{font-size:18px}
+.service-card p{font-size:13px;line-height:1.85}
+.process-card h3{font-size:19px}
+.process-card p{font-size:14px;line-height:1.85}
+.about-content{font-size:15px;line-height:1.9}
+.about-content .about-intro{font-size:20px}
+.capabilities span{font-size:12px}
+.testimonials-section .section-top>p{font-size:14px}
+.testimonial-feature-copy p{font-size:14px;line-height:1.9}
+.testimonial-client strong{font-size:13px}
+.testimonial-client small{font-size:11px}
+.testimonial-honesty-note{font-size:11px}
+.faq-intro p{font-size:15px}
+.faq-item summary{font-size:15px}
+.faq-item p{font-size:13px;line-height:1.9}
+.contact-content>p{font-size:15px;line-height:1.9}
+.contact-details{font-size:12px}
+.footer-inner{font-size:12px}
+@media(max-width:640px){
+ .main-nav{font-size:14px}
+ .button{font-size:14px}
+ .hero-lead{font-size:16px;line-height:1.8}
+ .hero-proof strong{font-size:12px}
+ .hero-proof small{font-size:11px}
+ .hero-footer{font-size:9px}
+ .section-top>p{font-size:14px}
+ .eyebrow{font-size:10px}
+ .project-info h3,.work-editorial .project-info h3{font-size:16px}
+ .project-info p,.work-editorial .project-info p{font-size:12px;line-height:1.8}
+ .service-card h3{font-size:18px}
+ .service-card p{font-size:13px}
+ .process-card h3{font-size:18px}
+ .process-card p{font-size:13px}
+ .about-content{font-size:14px}
+ .about-content .about-intro{font-size:18px}
+ .capabilities span{font-size:12px}
+ .testimonial-feature-copy p{font-size:13px}
+ .testimonial-client strong{font-size:12px}
+ .testimonial-client small{font-size:10px}
+ .testimonial-honesty-note{font-size:10px}
+ .faq-intro p{font-size:14px}
+ .faq-item summary{font-size:14px}
+ .faq-item p{font-size:12px}
+ .contact-content>p{font-size:14px}
+ .contact-details{font-size:11px}
+ .footer-inner{font-size:11px}
+}
